@@ -89,6 +89,14 @@ body::before {
   margin-bottom: 38px;
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -142,6 +150,16 @@ body::before {
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(255, 255, 255, 0.06);
+}
+
+.youtube-link {
+  background: linear-gradient(135deg, #ff4d6d, #ff1f1f);
+  border-color: rgba(255, 255, 255, 0.22);
+  font-weight: 700;
+}
+
+.youtube-link:hover {
+  background: linear-gradient(135deg, #ff6f86, #ff2b2b);
 }
 
 .cta-link:hover,
@@ -419,6 +437,12 @@ blockquote {
 
   .topbar {
     align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .topbar-actions {
+    width: 100%;
+    justify-content: stretch;
     flex-direction: column;
   }
 
